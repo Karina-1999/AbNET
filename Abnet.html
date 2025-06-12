@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="abn.css">
+</head>
+<body>
+  <header>
+    <h1 class="tit">AbNET</h1>
+  </header>
+  <main>
+    <div class="content">
+      <div class="avatar-1">
+        <div class="head"></div>
+        <div class="body"></div>
+      </div>
+      <div class="swim-lane-1">
+        <div class="form-header">Регистрация</div>
+        <form class="register-form">
+      
+          <label for="username">Имя пользователя*</label>
+          <input type="text" id="username" name="username" minlength="3" maxlength="25" size="25" required pattern="[A-Za-zА-Яа-я0-9_\-]+"  title="Только буквы (рус/англ), цифры, '_' и '-'">
+      
+          <label for="email">Адрес электронной почты*</label>
+          <input type="email" pattern=".+@.+\..+" id="email" name="email" maxlength="100"required  title="Обязательно для заполнения '@' и '.'">
+      
+          <label for="password">Придумайте пароль*</label>
+          <input type="password" id="password" name="password" minlength="8" maxlength="8" size="8" required>
+      
+          <div class="checkbox-line">
+            <input type="checkbox" id="agree" required>
+            <label for="agree">Я соглашаюсь с <a href="#">условием пользования</a></label>
+          </div>
+      
+          <button type="submit">Зарегистрироваться</button>
+      
+          <p class="login-link">
+            <a href="repiteAbNET.html">Войти (уже есть аккаунт)</a>
+          </p>
+        </form>
+      </div>
+    </div>
+
+  </main>
+
+  <style>
+    html, body {
+      background-color: #F4EB49;
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    header {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      padding: 20px 30px 0 0;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      padding-top: 50px;
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  </style>
+</body>
+</html>
